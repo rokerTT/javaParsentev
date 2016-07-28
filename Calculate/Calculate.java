@@ -13,9 +13,17 @@ public class Calculate {
     public static void main(String[] arg){
         
         System.out.println("Calculate...");
-        int first = Integer.valueOf(arg[0]);
-        int second = Integer.valueOf(arg[1]);
-        int summ = first + second;
-        System.out.println("Summ ="+summ);
+        Double first = Double.valueOf(arg[0]);
+        Double second = Double.valueOf(arg[1]);
+        Double summ = first + second;
+        Double sub = first - second;
+        Double div = first / second;
+        Double mult = first * second;
+        Double pow = Math.pow(first, second);
+        System.out.println("Summ = "+summ);
+        System.out.println("Subscription = "+sub);
+        System.out.println("div = "+div);
+        System.out.println("Mult = "+mult);
+        System.out.println("Rait = "+pow);
     }
 }
