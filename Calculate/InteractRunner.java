@@ -15,19 +15,19 @@ public class InteractRunner{
                 String second=reader.next();
                 switch (operator){
                     case "+":
-                        calc.add(Integer.valueOf(first), Integer.valueOf(second));
+                        calc.add(Double.valueOf(first), Double.valueOf(second));
                         System.out.println("Summ: "+first+" + "+second+" = "+calc.getResult());
                         break;
                     case "-":
-                        calc.sub(Integer.valueOf(first), Integer.valueOf(second));
+                        calc.sub(Double.valueOf(first), Double.valueOf(second));
                         System.out.println("Cut: "+first+" - "+second+" = "+calc.getResult());
                         break;
                     case "*":
-                        calc.mult(Integer.valueOf(first), Integer.valueOf(second));
+                        calc.mult(Double.valueOf(first), Double.valueOf(second));
                         System.out.println("Mult: "+first+" * "+second+" = "+calc.getResult());
                         break;
                     case "/":
-                        calc.div(Integer.valueOf(first), Integer.valueOf(second));
+                        calc.div(Double.valueOf(first), Double.valueOf(second));
                         System.out.println("Div: "+first+" / "+second+" = "+calc.getResult());
                         break;
                     default: System.out.println("Command ERROR!!!");

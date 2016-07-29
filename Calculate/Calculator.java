@@ -4,42 +4,36 @@ public class Calculator {
      * Результат вычисления
      * 
      */
-    private int result;
+    private double result;
     /**
      * Суммруем результаты
      * @param params Аргумеенты суммирования. 
-     */    
-    public void add(int ... params){
-        for (Integer param : params){
+     */
+       
+    public final void add(double ... params){
+        for (double param : params){
             this.result += param;
         }
     }
-    public void sub(int ... params){
-        for (Integer param : params){
+    public final void sub(double ... params){
+        for (double param : params){
             this.result -= param;
         }
     }
-    public void mult(int ... params){
-        for (Integer param : params){
-            this.result *= param;
-        }
+    
+    public final void mult(final double param1, final double param2){
+            this.result =  param1 *  param2;
     }
-    public void div(int ... params){
-        for (Integer param : params){
-            this.result /= param;
-        }
+    public final void div(final double param1, final double param2){
+            this.result = param1 / param2;
     }
-    
-    
-    
-    
      /**
      * Получить результат
-     @return результат вычисления
+     * @return результат вычисления
      */
-    public int getResult(){
+    public double getResult(){
         return this.result;
-        }
+    }
     /**
      * Очистить результат вычисления.
      */ 
@@ -47,17 +41,3 @@ public class Calculator {
         this.result = 0;
         }
 }
-/**System.out.println("Calculate...");
-        Double first = Double.valueOf(arg[0]);
-        Double second = Double.valueOf(arg[1]);
-        Double summ = first + second;
-        Double sub = first - second;
-        Double div = first / second;
-        Double mult = first * second;
-        Double pow = Math.pow(first, second);
-        System.out.println("Summ = "+summ);
-        System.out.println("Subscription = "+sub);
-        System.out.println("div = "+div);
-        System.out.println("Mult = "+mult);
-        System.out.println("Rait = "+pow);
-*/
