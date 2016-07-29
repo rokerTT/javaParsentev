@@ -8,7 +8,7 @@
  *
  * @author Sergey Vasilev
  */
-public class Calculate {
+public class Calculate{
     
     public static void main(String[] arg){
         
